@@ -1,4 +1,4 @@
-###一、前言
+### 一、前言
 在做项目的过程中常常需要对用户设备的网络状态进行实时监听，判断用户是以哪种上网方式，有两个目的：
  （1）让用户了解自己的网络状态，防止一些误会（比如怪应用无能）
  （2）根据用户的网络状态进行智能处理，节省用户流量，提高用户体验 
@@ -10,9 +10,9 @@
 * 使用苹果官方提供的专门检测iOS设备网络环境的库 Reachability
 * 使用AFNetworking库中的AFNetworkReachabilityManager来进行iOS设备的网络环境监听
 
-###二、使用
+### 二、使用
 
-#####1、Reachability
+##### 1、Reachability
 * 使用之前请从Apple网站下载示例：[Reachability](https://developer.apple.com/library/archive/samplecode/Reachability/Reachability.zip)
 * **Reachability** 中定义了3种网络状态: 
 ```
@@ -119,7 +119,7 @@ typedef enum : NSInteger {
 }
 ```
 
-#####2、AFNetworkReachabilityManager
+##### 2、AFNetworkReachabilityManager
 * 导入第三方库AFNetworking
 * 在你要检测的ViewController中添加头文件 或者 直接添加在AppDelegate中
 ```
@@ -186,7 +186,7 @@ typedef enum : NSInteger {
 }
 ```
 
-#####3、RealReachability
+##### 3、RealReachability
 听说还有一个封装苹果官方 Reachability 的库 RealReachability，由于还没用过，所以就不再这边示例了，发一下该库的GitHub地址  [RealReachability](https://github.com/dustturtle/RealReachability.git)
 
 参考demo：[实时监控网络状态的改变Reachability](https://github.com/GrandSu/ReachabilityDemo.git)
